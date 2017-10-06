@@ -1,2 +1,2 @@
 # simple-calc
-INFO449
+INFO449 - Assignment 2
