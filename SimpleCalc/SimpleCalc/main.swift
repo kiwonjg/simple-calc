@@ -19,7 +19,7 @@ while (!exit) {
     var systemState = 0
     if (response.contains("count")) {
        systemState = 1
-    } else if (response.contains("avg")) {
+    } else if (response.contains("avg")) { 
         systemState = 2
     } else if (response.contains("fact")) {
         systemState = 3
@@ -29,7 +29,8 @@ while (!exit) {
     if (response == "q") {
         exit = !exit
     } else if (systemState != 0) {
-        let trimmedValue = response.split(separator: " ")
+        //let trimmedValue = response.split(separator: " ")
+        let trimmedValue = response.components(separatedBy: " ")
         
         // check if there is any invalid value
         var factCounter = 0
